@@ -11,10 +11,11 @@ chart_data = pd.DataFrame(
 st.bar_chart(chart_data)
 
 title = st.text_input('Enter User Name', 'Life of Brian')
-
-result =  st.button("Click Here")
+number = st.number_input('Insert a User Age')
+result =  st.button("Click Submit")
 if result:
-     st.write(title)
+     st.write('User Is :', title)
+     st.write('Age :' ,number)
 else:
      st.write("No Click")
 
