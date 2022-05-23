@@ -12,7 +12,9 @@ st.bar_chart(chart_data)
 
 title = st.text_input('Enter User Name', 'Life of Brian')
 number = st.number_input('Insert a User Age')
-d = st.date_input("When's your birthday",datetime.date(2019, 7, 6))
+d = st.date_input(
+     "When's your birthday",
+     datetime.date(2019, 7, 6))
 result =  st.button("Click Submit")
 if result:
      st.write('User Is :', title)
