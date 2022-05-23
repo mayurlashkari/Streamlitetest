@@ -1,5 +1,5 @@
 import time
-
+import streamlit as st
 my_bar = st.progress(0)
 
 for percent_complete in range(100):
