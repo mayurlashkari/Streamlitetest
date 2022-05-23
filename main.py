@@ -1,15 +1,15 @@
 import streamlit as st
 
-st.title("OpenCV Demo App")
-st.subheader("This app allows you to play with Image filters!")
-st.text("We use OpenCV and Streamlit for this demo")
-if st.checkbox("Main Checkbox"):
-    st.text("Check Box Active")
+import pandas as pd
+import numpy as np
+import altair as alt
 
-slider_value = st.slider("Slider", min_value=0.5, max_value=3.5)
-st.text(f"Slider value is {slider_value}")
+df = pd.DataFrame(
+     np.random.randn(200, 3),
+     columns=['a', 'b', 'c'])
 
-st.sidebar.text("text on side panel")
-st.sidebar.checkbox("Side Panel Checkbox")
-st.header('Test Stream Lite')
-st.write('Hello, *World!* :sunglasses:')
+c = alt.Chart(df).mark_circle().encode(
+     x='a', y='b', size='c', color='c', tooltip=['a', 'b', 'c'])
+
+st.write(c)
+
