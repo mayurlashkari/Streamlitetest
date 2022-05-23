@@ -9,4 +9,7 @@ chart_data = pd.DataFrame(
      columns=["a", "b", "c"])
 
 st.bar_chart(chart_data)
-
+result =  st.button("Click Here")
+if result:
+     st.write(":smile:")
+     
