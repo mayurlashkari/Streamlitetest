@@ -12,4 +12,5 @@ st.bar_chart(chart_data)
 result =  st.button("Click Here")
 if result:
      st.write(":smile:")
-     
+else:
+     st.write("No Click")
