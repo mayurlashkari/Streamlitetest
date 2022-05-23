@@ -11,6 +11,14 @@ chart_data = pd.DataFrame(
 st.bar_chart(chart_data)
 result =  st.button("Click Here")
 if result:
-     st.write(":smile:")
+     st.write(":smile:"*5)
 else:
      st.write("No Click")
+
+with open("flower.png", "rb") as file:
+     btn = st.download_button(
+             label="Download image",
+             data=file,
+             file_name="flower.png",
+             mime="image/png"
+           )
