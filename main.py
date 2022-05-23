@@ -10,7 +10,7 @@ chart_data = pd.DataFrame(
 
 st.bar_chart(chart_data)
 
-title = st.text_input('Movie title', 'Life of Brian')
+title = st.text_input('Enter User Name', 'Life of Brian')
 
 result =  st.button("Click Here")
 if result:
