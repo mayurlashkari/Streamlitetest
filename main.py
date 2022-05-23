@@ -11,11 +11,10 @@ chart_data = pd.DataFrame(
 st.bar_chart(chart_data)
 
 title = st.text_input('Movie title', 'Life of Brian')
-value= st.write('The current movie title is', title)
 
 result =  st.button("Click Here")
 if result:
-     st.write(value)
+     st.write(title)
 else:
      st.write("No Click")
 
