@@ -15,10 +15,7 @@ if result:
 else:
      st.write("No Click")
 
-with open("flower.png", "rb") as file:
-     btn = st.download_button(
-             label="Download image",
-             data=file,
-             file_name="flower.png",
-             mime="image/png"
-           )
+agree = st.checkbox('I agree')
+
+if agree:
+     st.write('Great!')
