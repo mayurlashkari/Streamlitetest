@@ -8,4 +8,4 @@ for percent_complete in range(100):
 
 with st.spinner('Wait for it...'):
     time.sleep(5)
-st.success('Done!')
+st.error('This is an error')
